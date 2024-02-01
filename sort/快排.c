@@ -62,6 +62,9 @@ void QuickSort(int* a, int left,int right)
 
     pivot = begin;
     a[pivot] = key;
+   
     QuickSort(a, left, pivot - 1);
-    QuickSort(a, pivot+1, right);
+   QuickSort(a, pivot+1, right);
+  
+
 }
