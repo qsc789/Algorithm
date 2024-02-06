@@ -1,3 +1,6 @@
+//leetcode268
+//https://leetcode.cn/problems/missing-number/
+
 // 查找某个元素是否在哈希表中，可以使用hash.find(x) != hash.end(),或者hash.count(x) > 0
 // 注意：hash.count(x) 的数值只有 0 和 1。所以不能通过hash.count(x)来表示x在hash 中出现的次数。
 class Solution {
