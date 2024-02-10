@@ -15,11 +15,11 @@ class Solution {
     }
     public int robRange(int[] nums,int start,int end)
     {
-        int first=nums[start],second=Math.max(nums[start],nums[start+1]);
+        int first=nums[start],second=Math.max(nums[start],nums[start+1]);//前两个里最大值
         for(int i=start+2,i<=end;i++)
         {
             int temp=second;
-            second=Math.max(first+nums[i],second);
+            second=Math.max(first+nums[i],second);//存最大值
             first=temp;
         }
         return second;
