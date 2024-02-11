@@ -12,7 +12,7 @@ class Solution {
       int[] sum=new int[MaxVal+1];
      for (int i = 0; i < numsSize; i++) 
  {
-        sum[nums[i]] += nums[i];
+        sum[nums[i]] += nums[i];//记录每个值对应的点数，3个3则最多点数为9
  }
       return rob(sum);
     }
@@ -21,7 +21,7 @@ class Solution {
     {
         int size=nums.length;
         int first=nums[0],second=Math.max(nums[0],nums[1]);
-        for(int i=2;i<size;i++)
+        for(int i=2;i<size;i++)//跟打家劫舍一样的迭代
         {
             int temp=second;
             second=Math.max(first+nums[i],second);
