@@ -1,3 +1,6 @@
+//leetcode740
+//https://leetcode.cn/problems/delete-and-earn/
+//题解https://leetcode.cn/problems/delete-and-earn/solutions/758416/shan-chu-bing-huo-de-dian-shu-by-leetcod-x1pu
 class Solution {
     public int deleteAndEarn(int[] nums) {
       int MaxVal=0;
