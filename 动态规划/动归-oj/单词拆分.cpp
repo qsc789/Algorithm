@@ -16,7 +16,7 @@ public:
         {
             for(int j=0;j<i;j++)
             {
-                if(dp[j]&&wordDicSet.find(s.substr(j,i-1))!=wordDicSet.end())//wordDicSet.count(s.substr(j,i-1))
+                if(dp[j]&&wordDicSet.find(s.substr(j,i-j))!=wordDicSet.end())//wordDicSet.count(s.substr(j,i-1))
                 {
                     dp[i]=true;
                     break;
