@@ -8,7 +8,7 @@ public:
         {
             return num;
         }
-        vector<int> up(num),down(num);
+        vector<int> up(num),down(num);//多个容器声明方法
         up[0]=down[0]=1;
         for(int i=1;i<num;i++)
         {
