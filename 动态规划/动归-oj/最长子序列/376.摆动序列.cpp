@@ -4,6 +4,7 @@ class Solution {
 public:
     int wiggleMaxLength(vector<int>& nums) {
         int num=nums.size();
+        
         if(num<2)
         {
             return num;
