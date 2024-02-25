@@ -28,7 +28,7 @@ public:
                 int left_down=dp[i-1][j-1];
                 if(word1[i-1]!=word2[j-1])
                 {
-                    left_down++;
+                    left_down++;//如果字母不一样就加1，一样的话dp和左下方dp相同
                 }
                 dp[i][j]=min(left,min(down,left_down));
             }
