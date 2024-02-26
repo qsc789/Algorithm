@@ -11,6 +11,9 @@ public:
         }
         vector<int> up(num),down(num);//多个容器声明方法
         up[0]=down[0]=1;
+        //up[i] 表示以前 i 个元素中的某一个为结尾的最长的「上升摆动序列」的长度。
+        //down[i] 表示以前 i 个元素中的某一个为结尾的最长的「下降摆动序列」的长度。
+        //注意是某一个
         for(int i=1;i<num;i++)
         {
             if(nums[i]>nums[i-1])//上升
