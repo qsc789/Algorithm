@@ -14,7 +14,7 @@ public:
         {
             //跟53一样的pre和res
             pre=max(pre+nums[i],nums[i]);
-            res=max(res,pre);
+            res=max(res,pre);//持续保存最大值，类似53返回的*max_element
             //算左前缀
             leftSum+=nums[i];
             leftMax[i]=max(leftMax[i-1],leftSum);
