@@ -16,11 +16,11 @@ public:
                     if (dp[j] + 1 > dp[i])//出现更长的，个数重置
                     {
                         dp[i] = dp[j] + 1;
-                        cnt[i] = cnt[j];
+                        cnt[i] = cnt[j];//最长长度更新，数量不变，传递下去
                     }
                     else if (dp[j] + 1 == dp[i])//长度相等，个数相加
                     {
-                        cnt[i] += cnt[j];
+                        cnt[i] += cnt[j];//最长长度不变，数量相加
                     }
                 }
             }
