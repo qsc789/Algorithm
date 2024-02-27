@@ -7,7 +7,7 @@ public:
         int num=arr.size();
         for(int i=0;i<num;i++)
         {
-            indices[arr[i]]=i;//对应关系
+            indices[arr[i]]=i;//对应关系，用来根据数找下标
         }
         vector<vector<int>> dp(num,vector<int>(num));
         //dp[j][i] 表示以arr[j] 和arr[i] 作为最后两个数字的斐波那契子序列的最大长度
