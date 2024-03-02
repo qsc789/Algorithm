@@ -1,6 +1,7 @@
 
 #include <iostream>
 #include <cstdio>
+#include<cmath>
 using namespace std;
 int x[15] = {0};
 int sum,n;
@@ -40,9 +41,11 @@ void DFS(int a)
         {
             x[a]=i;
                 //第a个皇后放的列数
-            if(PD(a))
-                    //判断是否能放这步
+            if(PD(a))//判断是否能放这步
+            {
                 DFS(a+1);
+                x[a]=0;//恢复现场
+            }
                     //能的话进行下一个皇后的放置
             else continue ;
                     //不能就下一列
