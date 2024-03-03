@@ -23,10 +23,9 @@ int main()
     else
     a[i]=(c-'0');
   }
-  for(int i =0 ;i<6 ;i++)
-  {
-    ans[0].push_back(a[i]);
-  }
+  
+    ans[0].push_back(a[0]);
+  
  
  
   for(int i = 1; i< 6; i++ )        //外层循环是每一个抽到的牌
