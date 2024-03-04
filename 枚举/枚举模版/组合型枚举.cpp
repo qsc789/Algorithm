@@ -1,30 +1,40 @@
-#include<bits/stdc++.h>
+#include<iostream>
+#include<vector>
+#include<string>
 using namespace std;
-int n;
-int m;
+int n, m;
 vector<int> chosen;
-void calc(int x)
+string s[1000];
+void calc(int k)
 {
-	if(chosen.size()>m||chosen.size()+(n-x+1)<m)
+	if (chosen.size()>m || chosen.size() + (n - k + 1)<m)//已经判断chosen.size()了
 	{
-		return ;
+		return;
 	}
-	else if(x==n+1)
+	else if (k == n+1)//n个数都走完了
 	{
-		for(int i=0;i<chosen.size();i++)
+		for (int i = 0; i < chosen.size(); i++)
 		{
-			cout<<chosen[i]<<" ";
+			cout << s[chosen[i]] << " ";
 		}
-		return ;
+		cout << endl;
+		return;
 	}
-	chosen.push_back(x);
-	calc(x+1);
-	chosen.pop_back();//走到这说明不选这个数 
-	calc(x+1);
+	else
+	{
+		chosen.push_back(k);
+		calc(k + 1);
+		chosen.pop_back();
+		calc(k + 1);
+	}
 }
 int main()
 {
-	cin>>n>>m;
+	cin >> n >> m;
+	for (int i = 1; i <= n; i++)
+	{
+		cin >> s[i];
+	}
 	calc(1);
 	return 0;
- } 
+}
