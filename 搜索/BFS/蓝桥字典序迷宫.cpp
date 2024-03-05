@@ -18,7 +18,7 @@ queue<point> r;
 
 bool check(int x,int y)
 {
-	if(x>0&&y>0&&x<=50&&y<=50&&a[x][y]=='0'&&dp[x][y]==-1)
+	if(x>0&&y>0&&x<=30&&y<=50&&a[x][y]=='0'&&dp[x][y]==-1)
 	{
 		return true;
 	}
@@ -75,7 +75,7 @@ int main()
 		{
 			int tx=x+dx[i];
 	    	int ty=y+dy[i];
-		if(tx>0&&ty>0&&ty<=50&&tx<=50&&a[tx][ty]=='0'&&dp[tx][ty]==dp[x][y]-1)
+		if(tx>0&&ty>0&&ty<=50&&tx<=30&&a[tx][ty]=='0'&&dp[tx][ty]==dp[x][y]-1)
 		{
 			x=tx;
 			y=ty;
