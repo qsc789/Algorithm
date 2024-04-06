@@ -1,4 +1,5 @@
 //https://www.lanqiao.cn/courses/31015/learning/?id=1927006&compatibility=false
+//a^n mod m=(a mod m)^n mod m
 #include<iostream>
 using namespace std;
 long long fastPow(long long a,long long n,long long mod)
